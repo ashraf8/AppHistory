@@ -152,7 +152,7 @@ public class MainActivity extends ActionBarActivity
         @Override
         public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
             super.onViewCreated(view, savedInstanceState);
-            List<DbLog> log = DbLog.listAll(DbLog.class);
+            List<DbLog> log = DbLog.find(DbLog.class,null,null,null,"date DESC",null);
             //Log.d("main","Current size" + log.size());
             //Toast.makeText(getActivity(),"Current size " + log.size(),Toast.LENGTH_LONG).show();
 
